@@ -34,24 +34,48 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Press me"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Press me to reset toggle"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVP-kW-6QH" customClass="FJButton3D" customModule="FJButton3DDemo" customModuleProvider="target">
+                                <rect key="frame" x="20" y="392" width="335" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="D9D-oj-DaN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="frontColor">
+                                        <color key="value" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="behindColor">
+                                        <color key="value" red="0.0" green="0.4823529411764706" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Toggle button"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1Kv-Zl-tGJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Fxt-Pk-zvu"/>
+                            <constraint firstItem="RVP-kW-6QH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Idw-oa-sQv"/>
                             <constraint firstItem="1Kv-Zl-tGJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="P6t-AM-i9Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RVP-kW-6QH" secondAttribute="trailing" constant="20" id="P7b-aP-FwW"/>
+                            <constraint firstItem="RVP-kW-6QH" firstAttribute="top" secondItem="1Kv-Zl-tGJ" secondAttribute="bottom" constant="29" id="gOf-BL-sGx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Kv-Zl-tGJ" secondAttribute="trailing" constant="20" id="v8c-dw-Hcs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="button3D" destination="1Kv-Zl-tGJ" id="Hml-ew-aD8"/>
+                        <outlet property="toggleButton3D" destination="RVP-kW-6QH" id="IHK-QV-0Or"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="36" y="60.719640179910051"/>
         </scene>
     </scenes>
 </document>
