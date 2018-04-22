@@ -1,11 +1,13 @@
 # FJButton3D
 3D button component made in Swift
 
+![alt text](https://raw.githubusercontent.com/fedejordan/FJButton3D/master/demo.gif)
+
 > This project has started as a component in a own project and I want to open the code in case anyone need the same functionality.
 
 ### Main features
 + Customize front and back colors
-+ Setup status
++ Setup status and if it is a toggle
 
 ### Installation
 Clone the repository and copy the file `FJButton3D.swift` to your project.
